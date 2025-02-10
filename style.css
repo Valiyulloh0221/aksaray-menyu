@@ -1,0 +1,214 @@
+@font-face {
+    font-family: Aksaray;
+    src: url(./fonts/OPTIDiannaScript-BoldAgen.otf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+* {
+    font-family: Poppins, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Umumiy uslublar */
+body { /* Yaxshi o'qiladigan shrift */
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Yorqinroq fon rangi */
+    color: #333; /* Matn rangi */
+}
+
+/* Bo'limlar */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Yengil soyalar */
+}
+
+header {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+header a{
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 90px;
+    font-family: Aksaray;
+  }
+
+/* Sarlavhalar */
+section h2 {
+    font-size: 24px;
+    color: #8b0000; /* Qizil urg'u */
+    border-bottom: 2px solid #8b0000; /* Chiziqli urg'u */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Menyu elementlari */
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #f2f2f2; /* Hover effekti uchun fon */
+}
+
+.menu-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Rasm uchun soyalar */
+}
+
+/* Narx va nom uslubi */
+.menu-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.price {
+    font-weight: bold;
+    color: #8b0000; /* Narx uchun qizil urg'u */
+}
+
+/* Nav bar uslubi */
+.category-nav {
+    display: flex;
+    justify-content: start; /* Chap tomonga hizalanadi */
+    gap: 10px;
+    padding: 15px 10px;
+    background-color: #000;
+    overflow-x: auto; /* Sig‘magan elementlar uchun scroll */
+    scrollbar-width: thin; /* Firefox uchun ingichka scrollbar */
+}
+
+.category-nav::-webkit-scrollbar {
+    height: 8px;
+}
+
+.category-nav::-webkit-scrollbar-thumb {
+    background-color: #8b0000; /* Scrollbar rangi */
+    border-radius: 10px;
+}
+
+.category-nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap; /* Gorizontal scroll */
+}
+
+.category-nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.category-nav ul li a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-nav ul li a:hover img {
+    transform: scale(1.1); /* Kattalashish effekti */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer uslubi */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #600;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/* Mobil qurilmalar uchun umumiy uslublar */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Matn hajmini kichraytirish */
+    }
+
+    header a {
+        font-size: 50px; /* Sarlavha shriftini kichikroq qilish */
+    }
+
+    .category-nav {
+        gap: 5px; /* Tugmalar orasidagi bo'shliqni kamaytirish */
+        padding: 10px 5px; /* Mobil ekran uchun moslashtirish */
+        overflow-x: auto; /* Gorizontal scroll imkoniyati */
+    }
+
+    .category-nav ul li a img {
+        width: 50px; /* Tugmalarni kichikroq qilish */
+        height: 50px;
+    }
+
+    .category-nav ul li a span {
+        font-size: 10px; /* Matn hajmini moslashtirish */
+    }
+
+    section {
+        padding: 15px; /* Ichki bo'shliqni kamaytirish */
+        margin: 10px; /* Mobil ekran uchun bo‘sh joyni moslashtirish */
+    }
+
+    .menu-item {
+        flex-direction: column; /* Elementlarni vertikal hizalash */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu-item img {
+        width: 50px; /* Rasmni kichraytirish */
+        height: 50px;
+        margin: 0 0 10px 0; /* Rasmlar va matn orasidagi bo‘shliq */
+    }
+
+    .menu-item p {
+        font-size: 14px; /* Matn hajmini kichikroq qilish */
+    }
+
+    footer {
+        font-size: 12px; /* Footer matnini kichikroq qilish */
+        padding: 10px; /* Ichki bo'shliqni moslashtirish */
+    }
+}
