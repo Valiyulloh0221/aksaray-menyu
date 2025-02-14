@@ -156,6 +156,9 @@ body {
     background: url('./images/mainbackground.webp') repeat;
     background-size: cover;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     border-radius: 1px;
 }
 
@@ -197,17 +200,12 @@ section h2 {
 }
 
 /* Ovqat rasmlarini to'g'ri joylashtirish */
-.menu-image {
-    width: 150px;
-    height: 150px;
+.menu-item img {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.menu-image img {
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 15px;
 }
