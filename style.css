@@ -11,6 +11,30 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Scroll Up Button Styling */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: none;
+    transition: all 0.4s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: #FF4500;
+    transform: scale(1.1);
+}
+
 * {
     font-family: Poppins, sans-serif;
     padding: 0;
