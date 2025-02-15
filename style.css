@@ -156,6 +156,7 @@ body {
     background: url('./images/mainbackground.webp') repeat;
     background-size: cover;
     padding: 20px;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -164,6 +165,9 @@ body {
 
 /* Sektsiyalar */
 section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     background: rgba(255, 250, 240, 0.95);
     padding: 25px;
     border-radius: 10px;
@@ -195,7 +199,7 @@ section h2 {
 }
 
 .menu-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
     box-shadow: 0 8px 18px rgba(139, 0, 0, 0.3);
 }
 
@@ -217,25 +221,74 @@ section h2 {
     font-size: 18px;
 }
 
-/* Footer uslubi */
-footer {
+.site-footer {
+    background: linear-gradient(135deg, #4B0000, #800000);
+    color: #fff;
+    padding: 20px 20px;
     text-align: center;
-    padding: 20px;
-    background-color: #600;
-    color: white;
-    font-size: 14px;
 }
 
-footer a {
-    color: #ffa500;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.social-media a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #FF4500;
+}
+
+.delivery-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #FFA500;
+}
+
+.delivery-info a {
+    color: #FFA500;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-footer a:hover {
-    color: white;
-    text-decoration: underline;
+.delivery-info a:hover {
+    color: #fff;
 }
+
+.slogan {
+    font-style: italic;
+    font-size: 18px;
+    color: #fff;
+}
+
 
 /* Mobil qurilmalar uchun */
 @media (max-width: 768px) {
@@ -282,7 +335,12 @@ footer a:hover {
     }
 
     footer {
-        font-size: 12px;
-        padding: 10px;
+        font-size: 14px;
+    }
+    .footer-icons a {
+        font-size: 20px;
+    }
+    .footer-content .phone-number {
+        font-size: 16px;
     }
 }
