@@ -55,7 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('./images/headernaqsh.webp') repeat;
+    background: url('./images/headernaqsh.jpg') repeat;
     background-size: cover;
     padding: 20px;
     gap: 15px;
@@ -177,7 +177,7 @@ body {
 }
 
 .main-container {
-    background: url('./images/mainbackground.webp') repeat;
+    background: url('./images/mainbackground.jpg') repeat;
     background-size: cover;
     padding: 20px;
     margin-bottom: 0px;
