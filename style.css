@@ -314,7 +314,6 @@ section h2 {
 }
 
 
-/* Mobil qurilmalar uchun */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -325,14 +324,17 @@ section h2 {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .category-nav ul {
         gap: 15px;
         padding-left: 0;
         padding-right: 0;
     }
+
     .category-nav ul li {
         min-width: 90px;
     }
+
     .category-nav ul li a img {
         width: 70px;
         height: 70px;
@@ -348,22 +350,28 @@ section h2 {
         text-align: center;
     }
 
+    /* Rasmlarni kattaroq qilish */
     .menu-item img {
-        border-radius: 5px;
-        width: 100px;
-        height: 100px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 250px;  /* Telefon ekrani uchun optimal o'lcham */
+        height: auto; /* Proportsiyani saqlash uchun */
+        display: block;
+        margin: 0 auto; /* Markazga joylash */
     }
 
     .menu-item p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     footer {
         font-size: 14px;
     }
+
     .footer-icons a {
         font-size: 20px;
     }
+
     .footer-content .phone-number {
         font-size: 16px;
     }
